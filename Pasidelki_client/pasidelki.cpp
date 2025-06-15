@@ -56,5 +56,5 @@ void Pasidelki::sendMessage()
 
 void Pasidelki::messageReceived()
 {
-    ui->te_chat->setPlainText(ui->te_chat->toPlainText() + QString(m_socket->readAll()));
+    ui->te_chat->setPlainText(ui->te_chat->toPlainText() + QString(m_socket->readAll() + "\n"));
 }
